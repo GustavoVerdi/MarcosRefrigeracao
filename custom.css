@@ -1,0 +1,443 @@
+@font-face {
+    src: url(https://fonts.googleapis.com/css2?family=Arimo&display=swap);
+    font-family: 'Arimo', sans-serif;
+  }
+  * {
+      font-size: 18px;
+      font-family: 'Arimo', sans-serif;
+  }
+  body {
+      align-items: center;
+      margin: 0px;
+      border: 10px;
+      background-color: #343434;
+      background-color: #343434
+    } 
+  /* Basic styling */
+  * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    nav {
+      background: rgb(255, 255, 255);
+      padding: 5px 20px;
+      border-bottom:3px solid #000000;
+  
+    }
+    ul {
+      list-style-type: none;
+    }
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .logo a:hover {
+      text-decoration: none;
+    }
+    .menu li {
+      font-size: 16px;
+      padding: 15px 5px;
+    /*  white-space: nowrap; */
+    }
+    .logo a,
+    .toggle a {
+      font-size: 20px;
+    }
+    .button.secondary {
+      border-bottom: 1px #444 solid;
+    }
+    
+    /* Mobile menu */
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .toggle {
+      order: 1;
+    }
+    .item.button {
+      order: 2;
+    }
+    .item {
+      width: 100%;
+      text-align: center;
+      order: 3;
+      display: none;
+    }
+    .item.active {
+      display: block;
+    }
+    
+    /* Navbar Toggle */
+    .toggle {
+      cursor:pointer;
+    }
+    .bars {
+      background: #020101;
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+    .bars:before,
+    .bars:after {
+      background: #000000;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    .bars:before {
+      top: 5px;
+    }
+    .bars:after {
+      top: -5px;
+    }
+    
+    /* Tablet menu */
+    @media all and (min-width: 468px) {
+      .menu {
+          justify-content: center;
+      }
+    
+      .logo {
+          flex: 1;
+      }
+    
+      .item.button {
+          width: auto;
+          order: 1;
+          display: block;
+      }
+      .toggle {
+          order: 2;
+      }
+      .button.secondary {
+          border: 0;
+      }
+      .button a {
+          padding: 7.5px 15px;
+          background: teal;
+          border: 1px #006d6d solid;
+          border-radius:50em;
+      }
+      .button.secondary a {
+          background: transparent;    
+      }
+      .button a:hover {
+          text-decoration: none;
+          transition:all .25s;
+      }
+      .button:not(.secondary) a:hover {
+          background: #006d6d;
+          border-color: #005959;
+      }
+      .button.secondary a:hover {
+          color: #ddd;
+      } 
+    }
+    
+    /* Desktop menu */
+    @media all and (min-width: 768px) {
+      .item {
+          display: block;
+          width: auto;
+      }
+      .toggle {
+          display: none;
+      }
+      .logo {
+          order: 0;
+      }
+      .item {
+          order: 1;
+      }
+      .button {
+          order: 2;
+      }
+      .menu li {
+          padding: 10px 10px;
+      }
+      .menu li.button {
+          padding-right: 0;
+      }
+    }
+    .logo img {
+      object-fit: cover; /* Redimensionamento da imagem para preencher o espaço */
+  }
+  .logopag{
+      padding: 0;
+      width: 320px; /* Largura 100% */
+      height: 70px; /* Altura 100% */
+  }
+  /* Estilos para a lista de carros */
+  .car-list {
+      display: inline-flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 2px;
+    
+  }
+  
+  .car {
+      border: 2px solid #000000;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 10px;
+      width: 450px;
+      text-align: center;
+      background-color: #ccc;
+  
+  }
+  
+  .car img {
+      max-width: 100%;
+      height: 300px;
+      object-fit: cover;
+  }
+  /* Estilos para o rodapé */
+  footer {
+    position: absolute; /* Use 'fixed' em vez de 'absolute' se preferir um footer fixo */
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  #Container {
+      align-items: center;
+      max-width: 100%;
+      position: relative; 
+      background-color: black;
+  
+  }
+  /* Estilos para o botão */
+  .botao {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff; /* Cor de fundo do botão */
+      color: white; /* Cor do texto do botão */
+      text-decoration: none;
+      border-radius: 5px; /* Borda arredondada */
+      font-weight: bold;
+      transition: background-color 0.3s; /* Efeito de transição de cor de fundo */
+  }
+  
+  /* Estilo de hover para o botão */
+  .botao:hover {
+      background-color: #0056b3; /* Cor de fundo quando o mouse passa sobre o botão */
+  }
+  
+  /* Estilos para o container */
+  /* Estilos para o container */
+  .container {
+      display: flex; /* Tornar o container um flex container */
+      justify-content: space-between; /* Distribuir espaço entre os campos */
+      padding: 20px; /* Espaçamento interno do container */
+      flex-wrap: wrap; /* Permite que os campos quebrem para a próxima linha */
+      display: flex;
+    }
+  
+  
+  /* Estilos para os campos */
+  .campo {
+      flex:1; /* Cada campo ocupa 50% do espaço disponível */
+      padding: 20px; /* Espaçamento interno dos campos */
+      border: 1px solid #ccc; /* Borda para destacar os campos */
+      box-sizing: border-box; /* Garante que as bordas não aumentem o tamanho total */
+      align-items: center;
+      
+  }
+  
+  /* Estilos para o campo esquerda */
+  .campo-esquerda {
+      background-color: #f2f2f2; /* Cor de fundo do campo esquerda */
+    } 
+  
+  /* Estilos para o campo direita */
+  .campo-direita {
+      background-color: #e0e0e0; /* Cor de fundo do campo direita */
+      
+  }
+  
+  /* Estilos para tornar responsivo */
+  @media (max-width: 768px) {
+      .container {
+          flex-direction: column; /* Coloca os campos um abaixo do outro */
+      }
+      .campo {
+          flex: auto; /* Ocupa o espaço disponível */
+          margin-bottom: 20px; /* Espaçamento entre os campos quando empilhados */
+      }
+  }
+  .carfoto{
+      border-radius: 5px;
+      padding: 5px;
+      margin: 10px;
+      width: 450px;
+      text-align: center;
+  }
+  
+  
+  /*  Anúncio Form */
+  /* CSS para centralizar e tornar responsivo o formulário de anúncio */
+  .formulario-quadro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; /* Centraliza o quadro horizontalmente */
+  }
+  
+  .formulario-quadro h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .formulario-quadro label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .formulario-quadro select,
+  .formulario-quadro button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .formulario-quadro button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .formulario-quadro {
+      max-width: 80%; /* Reduz a largura máxima em telas menores */
+    }
+  }
+  
+  /* Form anúncio */
+  img {
+      padding: 1px;
+      margin: 1px;
+      text-align: center;
+      object-fit: cover;
+      display: inline;
+  } 
+  
+  /* lINHA PÁGINA INDEX */
+  .line-container {
+    position: relative;
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  .styled-line {
+    border: 0;
+    border-top: 2px solid #ffffff;
+  }
+  
+  .line-label {
+    position: absolute;
+    top: 50%;
+    left: 25%; /* Posiciona o nome no início da linha (à esquerda) */
+    transform: translateY(-50%); /* Move o nome verticalmente para o centro da linha */
+    background-color: #ece5e5;
+    padding: 0 10px;
+  }
+  .home-classe {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2px;
+  }
+  
+  .art-home {
+    flex-basis: calc(33.33% - 20px); /* Calcula a largura de cada anúncio com espaçamento entre eles */
+    margin-bottom: 20px; /* Espaçamento entre os anúncios */
+    border: 2px solid rgba(0, 0, 0, 0.664);
+    background-color: #ccc;
+    border-radius: 3px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    
+  }
+  
+  .art-home img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .botaohome {
+    display: inline;
+    padding: 5px 5px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 5px; /* Borda arredondada */
+    font-weight: bold;
+    transition: background-color 0.3s; /* Efeito de transição de cor de fundo */
+  }
+  
+  .search-container {
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  input#search-bar {
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0PX 20px;
+    font-size: 1rem;
+    border: 1px solid #d0cfce;
+    outline: none;
+    &:focus {
+      border: 1px solid #000000;
+      transition: 0.35s ease;
+      color: #000000;
+      &::-webkit-input-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+      &:-ms-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+    }
+  }
+  
+  .search-icon {
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -62px;
+    right: -22px;
+  }
