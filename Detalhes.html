@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Brsales - Onde a Potência Encontra a Personalidade</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img class="logopag " src="./fotos/logonova.png" alt="Logo da Sua Empresa"><a href="#"></a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="anuncio.html">Anuncie seu Carro</a></li>
+            <li class="item"><a href="carros.html">Carros</a></li>
+            <li class="item button secondary"><a href="#">Login</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+        <div class="container">
+            <div class="campo campo-esquerda">
+                <!-- Conteúdo do campo esquerda -->
+                <img class="carfoto"  src="./carros/car1.jpg">
+                <p>NISSAN / GTR SKYLINE R34</p><!--MARCA/MODELO /CONSULTA BANCO DE DADOS -->
+                <p>2000/2000</p><!-- ANO MODELO/FABRICAÇÃO /CONSULTA BANCO DE DADOS-->
+                <p>Quilometragem:</p> <!-- /CONSULTA BANCO DE DADOS-->
+                <ul class="configcarro">
+                    <li>Stage 2</li>
+                    <li>Turbina ZR .50/63</li>
+                </ul>
+
+
+            </div>
+            <div class="campo campo-direita">
+                <!-- Conteúdo do campo direita -->
+                <form>
+                    <P>Informações Para contato</P>
+                    <p>Nome:</p>
+                    <p>Estado e Cidade:</p>
+                    <p>Telefone:</p>
+                    <a href="link whatsapp" readonly="readonly" id="meuCampo">
+                </form>
+            </div>
+        </div>
+</body>
+</html>
+
+</body>
+</html>
