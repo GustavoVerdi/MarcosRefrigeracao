@@ -444,4 +444,14 @@
 
   .inputforms {
     width: 300px;
+    border: 1px solid black;
+  }
+
+.main-image {
+    max-width: auto;
+    max-height: 500px;
+            margin: 0;
+            margin-left: 5px;
+            overflow: hidden;
+            position: absolute;
   }
