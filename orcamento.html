@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <title>Marcos Refrigeração</title>
+  <link rel="website icon" type="png" href="./logo/logo.png">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $(".toggle").on("click", function () {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        } else {
+          $(".item").addClass("active");
+        }
+      });
+    });
+    // Array de URLs das imagens
+ var images = [
+      "./template/template1.jpg",
+      "./template/template2.jpg",
+      // Adicione mais URLs de imagens conforme necessário
+    ];
+
+    var currentIndex = 0;
+    var interval = 2000; // 2 segundos
+
+    function changeImage() {
+      var mainImage = document.getElementById("mainImage");
+      mainImage.src = images[currentIndex];
+      currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    // Iniciar o carrossel
+    setInterval(changeImage, interval);
+
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li class="logo"><img class="logopag " src="./logo/logo.png" alt="Logo da Sua Empresa"><a href="#"></a></li>
+      <li class="item"><a href="index.html">Home</a></li>
+      <li class="item"><a href="carros.html">Catalago</a></li>
+      <li class="item"><a href="orcamento.html">Orçamento</a></li>
+      <li class="item"><a href="anuncio.html">Minha Conta</a></li>
+      <li class="item button secondary"><a href="index.html">Sair</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+    </ul>
+  </nav>
+    <br>
+    <div class="containeranuncio">
+        <div class="formulario-quadro">
+            <form action="consulta.php" method="POST" enctype="multipart/form-data">
+                <label for="valor">Solicite um Orçamento</label>
+                <input class="inputforms" type="text" name="valor" value="Nome Completo" id="campotext">
+                <br>
+                <label for="valor"></label>
+                <input class="inputforms" type="tel" name="valor" value="Telefone" id="campotext">
+                <br>
+                <label for="valor"></label>
+                <input class="inputforms" type="text" name="valor" value="E-mail" id="campotext">
+                <br>
+                <label for="valor"></label>
+                <input class="inputforms" type="text" name="valor" value="Marca e Modelo do Equipameto" id="campotext"><br><br>
+                <label>Descrição do Problema:</label>
+                <input  class="inputforms" type="text" name="adicionais" value="" style="height: 100px;">
+                <label for="fotos">Selecione as fotos:</label>
+                <input class="inputforms" type="file" name="fotos[]" id="fotos" multiple accept=".png, .jpg, .jpeg" style="  align-items: center;">
+                <br>
+                <br>
+                <button>Enviar Solicitação de Orçamento</button>
+            </form>
+        </div>
+    
+</body>
+</html>
