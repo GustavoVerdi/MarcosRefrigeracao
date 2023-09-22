@@ -206,7 +206,7 @@
   }
   /* Estilos para o rodapé */
   footer {
-    position: absolute; /* Use 'fixed' em vez de 'absolute' se preferir um footer fixo */
+    position: fixed; /* Use 'fixed' em vez de 'absolute' se preferir um footer fixo */
     bottom: 0;
     width: 100%;
     background-color: #333;
