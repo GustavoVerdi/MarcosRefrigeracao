@@ -10,8 +10,7 @@
       align-items: center;
       margin: 0px;
       border: 10px;
-      background-color: #343434;
-      background-color: #343434
+      background-color: #ffffff;
     } 
   /* Basic styling */
   * {
@@ -41,7 +40,7 @@
     .menu li {
       font-size: 16px;
       padding: 15px 5px;
-    /*  white-space: nowrap; */
+      color: #000000;
     }
     .logo a,
     .toggle a {
