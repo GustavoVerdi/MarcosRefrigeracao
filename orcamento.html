@@ -58,26 +58,26 @@
     <br>
     <div class="containeranuncio">
         <div class="formulario-quadro">
-            <form action="consulta.php" method="POST" enctype="multipart/form-data">
-                <label for="valor">Solicite um Orçamento</label>
-                <input class="inputforms" type="text" name="valor" value="Nome Completo" id="campotext">
-                <br>
-                <label for="valor"></label>
-                <input class="inputforms" type="tel" name="valor" value="Telefone" id="campotext">
-                <br>
-                <label for="valor"></label>
-                <input class="inputforms" type="text" name="valor" value="E-mail" id="campotext">
-                <br>
-                <label for="valor"></label>
-                <input class="inputforms" type="text" name="valor" value="Marca e Modelo do Equipamento" id="campotext"><br><br>
-                <label>Descrição do Problema:</label>
-                <input  class="inputforms" type="text" name="adicionais" value="" style="height: 100px;">
-                <label for="fotos">Selecione as fotos:</label>
-                <input class="inputforms" type="file" name="fotos[]" id="fotos" multiple accept=".png, .jpg, .jpeg" style="  align-items: center;">
-                <br>
-                <br>
-                <button>Enviar Solicitação de Orçamento</button>
-            </form>
+<form action="consulta.php" method="POST" enctype="multipart/form-data">
+    <label for="nome">Solicite um Orçamento</label>
+    <input class="inputforms" type="text" name="valor" id="nome" placeholder="Nome Completo">
+    <br>
+    <label for="telefone"></label>
+    <input class="inputforms" type="tel" name="valor" id="telefone" placeholder="Telefone">
+    <br>
+    <label for="email"></label>
+    <input class="inputforms" type="text" name="valor" id="email" placeholder="E-mail">
+    <br>
+    <label for="equipamento"></label>
+    <input class="inputforms" type="text" name="valor" id="equipamento" placeholder="Marca e Modelo do Equipamento"><br><br>
+    <label>Descrição do Problema:</label>
+    <input class="inputforms" type="text" name="adicionais" value="" style="height: 100px;">
+    <label for="fotos">Selecione as fotos:</label>
+    <input class="inputforms" type="file" name="fotos[]" id="fotos" multiple accept=".png, .jpg, .jpeg" style="align-items: center;">
+    <br>
+    <br>
+    <button>Enviar Solicitação de Orçamento</button>
+</form>
         </div>
     
 </body>
