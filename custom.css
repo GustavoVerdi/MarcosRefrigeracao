@@ -348,21 +348,24 @@
   /* lINHA PÁGINA INDEX */
   .line-container {
     position: relative;
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: center; /* Alinha o texto à esquerda */
+    background-color: #007bff;
   }
   
   .styled-line {
     border: 0;
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid #000000;
   }
   
   .line-label {
-    position: absolute;
-    top: 50%;
-    left: 25%; /* Posiciona o nome no início da linha (à esquerda) */
-    transform: translateY(-50%); /* Move o nome verticalmente para o centro da linha */
-    background-color: #ece5e5;
+    position: relative; /* Posiciona o nome no início da linha (à esquerda) */
+ /* Move o nome verticalmente para o centro da linha */
+    background-color: #fffefe;
+    border-radius: 10px;
     padding: 0 10px;
+    left: auto;
+    right: auto;
+    font-size: 20px;
   }
   .home-classe {
     display: flex;
