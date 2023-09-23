@@ -171,41 +171,39 @@
       }
     }
     .logo img {
-      object-fit: cover; /* Redimensionamento da imagem para preencher o espaço */
-  }
-  .logopag{
-      padding: 0;
-      width: 90px; /* Largura 100% */
-      height: 80px; /* Altura 100% */
-  }
-  /* Estilos para a lista de carros */
-  .car-list {
-      display: inline-flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 2px;
-    
-  }
-  
-  .car {
-      border: 2px solid #000000;
-      border-radius: 15px;
-      padding: 20px;
-      margin: 10px;
-     /* width: 100%; */
-      text-align: center;
-      background-color: #ccc;
-  
-  }
-  
-  .car img {
-      max-width: 100%;
-      height: 300px;
       object-fit: cover;
   }
+  .logopag{
+    padding: 0;
+    width: 90px;
+    height: 80px;
+  }
+
+  .product-list {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2px;
+  }
+  
+  .product {
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #ccc;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
   /* Estilos para o rodapé */
   footer {
-    position: fixed; /* Use 'fixed' em vez de 'absolute' se preferir um footer fixo */
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #333;
@@ -214,82 +212,80 @@
     padding: 10px;
   }
   #Container {
-      align-items: center;
-      max-width: 100%;
-      position: relative; 
-      background-color: black;
-  
+    align-items: center;
+    max-width: 100%;
+    position: relative; 
+    background-color: black;
+
   }
+
   /* Estilos para o botão */
   .botao {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff; /* Cor de fundo do botão */
-      color: white; /* Cor do texto do botão */
-      text-decoration: none;
-      border-radius: 5px; /* Borda arredondada */
-      font-weight: bold;
-      transition: background-color 0.3s; /* Efeito de transição de cor de fundo */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #191919;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
   }
   
   /* Estilo de hover para o botão */
   .botao:hover {
-      background-color: #0056b3; /* Cor de fundo quando o mouse passa sobre o botão */
+    background-color: #0056b3;
   }
   
   /* Estilos para o container */
-  /* Estilos para o container */
   .container {
-      display: flex; /* Tornar o container um flex container */
-      justify-content: space-between; /* Distribuir espaço entre os campos */
-      padding: 20px; /* Espaçamento interno do container */
-      flex-wrap: wrap; /* Permite que os campos quebrem para a próxima linha */
-      display: flex;
-    }
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+  }
   
   
   /* Estilos para os campos */
   .campo {
-      flex:1; /* Cada campo ocupa 50% do espaço disponível */
-      padding: 20px; /* Espaçamento interno dos campos */
-      border: 1px solid #ccc; /* Borda para destacar os campos */
-      box-sizing: border-box; /* Garante que as bordas não aumentem o tamanho total */
-      align-items: center;
-      
+    flex:1;
+    padding: 20px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    align-items: center;
   }
   
   /* Estilos para o campo esquerda */
   .campo-esquerda {
-      background-color: #f2f2f2; /* Cor de fundo do campo esquerda */
-    } 
-  
+    background-color: #f2f2f2;
+  } 
+
   /* Estilos para o campo direita */
   .campo-direita {
-      background-color: #e0e0e0; /* Cor de fundo do campo direita */
+      background-color: #e0e0e0;
       
   }
   
   /* Estilos para tornar responsivo */
   @media (max-width: 768px) {
-      .container {
-          flex-direction: column; /* Coloca os campos um abaixo do outro */
-      }
-      .campo {
-          flex: auto; /* Ocupa o espaço disponível */
-          margin-bottom: 20px; /* Espaçamento entre os campos quando empilhados */
-      }
+    .container {
+        flex-direction: column;
+    }
+    .campo {
+        flex: auto; 
+        margin-bottom: 20px;
+    }
   }
   .carfoto{
-      border-radius: 5px;
-      padding: 5px;
-      margin: 10px;
-      width: 450px;
-      text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: 450px;
+    text-align: center;
   }
   
   
   /*  Anúncio Form */
-  /* CSS para centralizar e tornar responsivo o formulário de anúncio */
   .formulario-quadro {
     background-color: white;
     padding: 20px;
@@ -298,7 +294,7 @@
     max-width: 400px;
     width: 100%;
     text-align: center;
-    margin: 0 auto; /* Centraliza o quadro horizontalmente */
+    margin: 0 auto;
   }
   
   .formulario-quadro h2 {
@@ -332,23 +328,26 @@
   
   @media (max-width: 768px) {
     .formulario-quadro {
-      max-width: 80%; /* Reduz a largura máxima em telas menores */
+      max-width: 80%;
     }
   }
   
   /* Form anúncio */
   img {
-      padding: 1px;
-      margin: 1px;
-      text-align: center;
-      object-fit: cover;
-      display: inline;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    object-fit: cover;
+    display: inline;
   } 
   
   /* lINHA PÁGINA INDEX */
   .line-container {
     position: relative;
     padding: 10px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .styled-line {
@@ -357,8 +356,7 @@
   }
   
   .line-label {
-    position: relative; /* Posiciona o nome no início da linha (à esquerda) */
- /* Move o nome verticalmente para o centro da linha */
+    position: relative;
     background-color: #dcdcdc;
     border-radius: 10px;
     padding: 0 10px;
@@ -372,11 +370,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 2px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .art-home {
-    flex-basis: calc(33.33% - 20px); /* Calcula a largura de cada anúncio com espaçamento entre eles */
-    margin-bottom: 20px; /* Espaçamento entre os anúncios */
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
     border: 2px solid rgba(0, 0, 0, 0.664);
     background-color: #ccc;
     border-radius: 3px;
@@ -394,12 +395,12 @@
   .botaohome {
     display: inline;
     padding: 5px 5px;
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
+    background-color: #007bff;
+    color: white; 
     text-decoration: none;
-    border-radius: 5px; /* Borda arredondada */
+    border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s; /* Efeito de transição de cor de fundo */
+    transition: background-color 0.3s;
   }
   
   .search-container {
@@ -441,8 +442,8 @@
     float: right;
     width: 75px;
     height: 75px;
-    top: -62px;
-    right: 24%;
+    top: -60px;
+    right: 618px;
   } 
 
   .inputforms {
@@ -450,11 +451,70 @@
     border: 1px solid black;
   }
 
-.main-image {
+  .main-image {
     max-width: auto;
     max-height: 500px;
-            margin: 0;
-            margin-left: 5px;
-            overflow: hidden;
-            position: inherit;
+    margin: 0;
+    margin-left: 5px;
+    overflow: hidden;
+    position: inherit;
+  }
+
+  .campoVitrine {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .space-between {
+    justify-content: space-between;
+    background-color: rgb(161, 162, 161);
+  }
+
+  .wrap {
+      flex-wrap: wrap;
+  }
+  .flex {
+      display: flex;
+  }
+
+  .footer-middle {
+    padding: 50px 4% 60px;
+    background: var(--bg-footer-default-color-dark);
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+  .footer-middle .section-title {
+    color: var(--icon-fill-base);
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-middle .box-seguranca-contato {
+    width: 460px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    border-left: 1px solid #be1313;
+  }
+  
+  .footer-middle .section-title {
+    color: var(--icon-fill-base);
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .campoRodape {
+    border: 10px solid rgb(161, 162, 161);
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
   }

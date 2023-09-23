@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="custom.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="text/javascript" src="script.js"></script>
+
   <title>Marcos Refrigeração</title>
+  
   <link rel="website icon" type="png" href="./logo/logo.png">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
@@ -44,6 +45,7 @@
 </head>
 
 <body>
+  <!-- Menu -->
   <nav>
     <ul class="menu">
       <li class="logo"><img class="logopag " src="./logo/logo.png" href="index.html" alt="Logo da Sua Empresa"><a href="#"></a></li>
@@ -54,124 +56,92 @@
       <li class="toggle"><span class="bars"></span></li>
     </ul>
   </nav>
-    <br> 
-    <div>
-      <input type="text" id="search-bar" placeholder="Busca">
-      <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
-    </div>
-    <BR>
-    <div class="line-container">
-      <span class="line-label">CATALOGO</span>
-    </div>
-    <section class="car-list">
-        <article class="car">
-            <img src="/fotoproduto/produto1.jpg" alt="Carro 1">
-            <!-- Foto do carro -->
-            <h2>GM / Opala</h2>
-            <!-- Marca/Modelo -->
-            <p>Ano: 1985</p>
-            <!-- Ano Modelo -->
-            <p>Descrição do carro e detalhes.</p>
-            <!-- Descrição-->
-            <p>Preço: R$ 150,000.00
-            </p>
-            <!-- Valor -->
-            <a href="Detalhes.html" class="botao">Mais Informações</a>
-        </article>
-        <article class="car">
-            <img src="/fotoproduto/produto2.jpg" alt="Carro 2">
-            <h2>GM / Chevette</h2>
-            <!-- Marca/Modelo -->
-            <p>Ano: 1993</p>
-            <!-- Ano Modelo -->
-            <p>Turbo/Injetado/FT550</p>
-            <!-- Descrição-->
-            <p>Preço: R$ 75,000</p>
-            <!-- Valor -->
-            <a href="Detalhes.html" class="botao">Mais Informações</a>
-        </article>
-        <article class="car">
-            <img src="/fotoproduto/produto3.jpg" alt="Carro 3">
-            <h2>Carro Modelo 3</h2>
-            <!-- Marca/Modelo -->
-            <p>2023/2023</p>
-            <!-- Ano Modelo -->
-            <p>Descrição do carro e detalhes.</p>
-            <!-- Descrição-->
-            <p>Preço: R$ 759,000</p>
-            <!-- Valor -->
-            <a href="Detalhes.html" class="botao">Mais Informações</a>
-        </article>
-        <article class="car">
-            <img src="/fotoproduto/produto4.jpg" alt="Carro 4">
-            <h2>Carro Modelo 4</h2>
-            <!-- Marca/Modelo -->
-            <p>2023/2023</p>
-            <!-- Ano Modelo -->
-            <p>Descrição do carro e detalhes.</p>
-            <!-- Descrição-->
-            <p>Preço: R$ 759,000</p>
-            <!-- Valor -->
-            <a href="Detalhes.html" class="botao">Mais Informações</a>
-        </article>
-        <article class="car">
-            <img src="/fotoproduto/produto5.jpg" alt="Carro 4">
-            <h2>Carro Modelo 5</h2>
-            <!-- Marca/Modelo -->
-            <p>2023/2023</p>
-            <!-- Ano Modelo -->
-            <p>Descrição do carro e detalhes.</p>
-            <!-- Descrição-->
-            <p>Preço: R$ 759,000</p>
-            <!-- Valor -->
-            <a href="Detalhes.html" class="botao">Mais Informações</a>
-        </article>
-        <article class="car">
-            <img src="/fotoproduto/produto6.jpg" alt="Carro 4">
-            <h2>Carro Modelo 6</h2>
-            <!-- Marca/Modelo -->
-            <p>2023/2023</p>
-            <!-- Ano Modelo -->
-            <p>Descrição do carro e detalhes.</p>
-            <!-- Descrição-->
-            <p>Preço: R$ 759,000</p>
-            <!-- Valor -->
-            <a href="Detalhes.html" class="botao">Mais Informações</a>
-        </article>
-        <article class="car">
-            <img src="/fotoproduto/produto1.jpg" alt="Carro 4">
-            <h2>Carro Modelo 6</h2>
-            <!-- Marca/Modelo -->
-            <p>2023/2023</p>
-            <!-- Ano Modelo -->
-            <p>Descrição do carro e detalhes.</p>
-            <!-- Descrição-->
-            <p>Preço: R$ 759,000</p>
-            <!-- Valor -->
-            <a href="Detalhes.html" class="botao">Mais Informações</a>
-        </article>
-        <article class="car">
-            <img src="/fotoproduto/produto2.jpg" alt="Carro 4">
-            <h2>Carro Modelo 6</h2>
-            <!-- Marca/Modelo -->
-            <p>2023/2023</p>
-            <!-- Ano Modelo -->
-            <p>Quilometragem:</p>
-            <!-- KM -->
-            <p>Descrição do carro e detalhes.</p>
-            <!-- Descrição-->
-            <p>Preço: R$ 759,000</p>
-            <!-- Valor -->
-            <a href="Detalhes.html" class="botao">Mais Informações</a>
-        </article>
-        <!-- Adicione mais carros aqui -->
-    </section>
+  <br> 
 
+  <!-- Campo Busca -->
+  <div>
+    <input type="text" id="search-bar" placeholder="Busca">
+    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+  </div>
+  <br>
 
+    <!-- Titulo -->
+  <div class="line-container">
+    <span class="line-label">CATALOGO</span>
+  </div>
+
+  <!-- Vitrine -->
+  <div class="campoVitrine">
+    <section class="product-list">
+      <article class="product">
+        <!-- Imagem -->
+        <img src="/fotoproduto/produto1.jpg" alt="frio01">
+        <!-- Titulo -->
+        <h2>Frigorbar 120L 12/24v</h2>
+        <!-- Valor -->
+        <p><b>R$ 3.505,50</b> no PIX</p>
+        <!-- Quantidade no Cartão-->
+        <p>6x de R$ 615,00 no cartão s/ juros</p><br>
+        <a href="Detalhes.html" class="botao">Mais Informações</a>
+      </article>
+
+      <article class="product">
+        <img src="/fotoproduto/produto2.jpg" alt="frio02">
+        <!-- Titulo -->
+        <h2>Frigorbar 80L 12/24v</h2>
+        <!-- Valor -->
+        <p><b>R$ 3.448,50</b> no PIX</p>
+        <!-- Quantidade no Cartão-->
+        <p>6x de R$ 605,00 no cartão s/ juros</p><br>
+        <a href="Detalhes.html" class="botao">Mais Informações</a>
+      </article>
+
+      <article class="product">
+        <img src="/fotoproduto/produto3.jpg" alt="frio03">
+        <!-- Titulo -->
+        <h2>Frigobar Duplex 88L 12/24v</h2>
+        <!-- Valor -->
+        <p><b>R$ 3.790,50</b> no PIX</p>
+        <!-- Quantidade no Cartão-->
+        <p>6x de R$ 665,00 no cartão s/ juros</p><br>
+        <a href="Detalhes.html" class="botao">Mais Informações</a>
+      </article>
+
+      <article class="product">
+        <img src="/fotoproduto/produto4.jpg" alt="frio04">
+        <!-- Titulo -->
+        <h2>Refrigerador Duplex 260L 12/24v</h2>
+        <!-- Valor -->
+        <p><b>R$ 5.035,50</b> no PIX</p>
+        <!-- Quantidade no Cartão-->
+        <p>6x de R$ 883,33 no cartão s/ juros</p><br>
+        <a href="Detalhes.html" class="botao">Mais Informações</a>
+      </article>
+
+      <article class="product">
+        <img src="/fotoproduto/produto5.jpg" alt="frio05">
+        <!-- Titulo -->
+        <h2>Caixa Térmica 90L</h2>
+        <!-- Valor -->
+        <p><b>R$ 893,00</b> no PIX</p>
+        <!-- Quantidade no Cartão-->
+        <p>6x de R$ 235,00 no cartão s/ juros</p><br>
+        <a href="Detalhes.html" class="botao">Mais Informações</a>
+      </article>
+
+      <article class="product">
+        <img src="/fotoproduto/produto6.jpg" alt="frio06">
+        <!-- Titulo -->
+        <h2>Freezer 300 Litros com Tampa 12/2</h2>
+        <!-- Valor -->
+        <p><b>R$ 3.505,50</b> no PIX</p>
+        <!-- Quantidade no Cartão-->
+        <p>6x de R$ 615,00 no cartão s/ juros</p><br>
+        <a href="Detalhes.html" class="botao">Mais Informações</a>
+      </article>
+
+      </article>
+    </section>'
+  </div>
 </body>
-
-</html>
-
-</body>
-
 </html>
