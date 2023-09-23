@@ -348,8 +348,7 @@
   /* lINHA PÁGINA INDEX */
   .line-container {
     position: relative;
-    text-align: center; /* Alinha o texto à esquerda */
-    background-color: #007bff;
+    padding: 10px;
   }
   
   .styled-line {
@@ -360,10 +359,11 @@
   .line-label {
     position: relative; /* Posiciona o nome no início da linha (à esquerda) */
  /* Move o nome verticalmente para o centro da linha */
-    background-color: #fffefe;
+    background-color: #dcdcdc;
     border-radius: 10px;
     padding: 0 10px;
     left: auto;
+    border: 2px solid #000000;
     right: auto;
     font-size: 20px;
   }
@@ -443,7 +443,7 @@
     height: 75px;
     top: -62px;
     right: 24%;
-  }
+  } 
 
   .inputforms {
     width: 300px;
