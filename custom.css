@@ -409,13 +409,14 @@
   }
   
   input#search-bar {
-    margin: 0 auto;
-    width: 100%;
+    margin: 0 25%;
+    width: 50%;
     height: 45px;
     padding: 0PX 20px;
     font-size: 1rem;
     border: 1px solid #d0cfce;
     outline: none;
+
     &:focus {
       border: 1px solid #000000;
       transition: 0.35s ease;
@@ -441,7 +442,7 @@
     width: 75px;
     height: 75px;
     top: -62px;
-    right: -22px;
+    right: 24%;
   }
 
   .inputforms {
