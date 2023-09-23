@@ -48,7 +48,7 @@
     <ul class="menu">
       <li class="logo"><img class="logopag " src="./logo/logo.png" alt="Logo da Sua Empresa"><a href="#"></a></li>
       <li class="item"><a href="index.html">Home</a></li>
-      <li class="item"><a href="carros.html">Catalago</a></li>
+      <li class="item"><a href="catalago.html">Catalago</a></li>
       <li class="item"><a href="orcamento.html">Orçamento</a></li>
       <li class="item"><a href="anuncio.html">Minha Conta</a></li>
       <li class="item button secondary"><a href="index.html">Sair</a></li>
@@ -57,28 +57,33 @@
   </nav>
     <br>
     <div class="containeranuncio">
-        <div class="formulario-quadro">
-<form action="consulta.php" method="POST" enctype="multipart/form-data">
-    <label for="nome">Solicite um Orçamento</label>
-    <input class="inputforms" type="text" name="valor" id="nome" placeholder="Nome Completo">
-    <br>
-    <label for="telefone"></label>
-    <input class="inputforms" type="tel" name="valor" id="telefone" placeholder="Telefone">
-    <br>
-    <label for="email"></label>
-    <input class="inputforms" type="text" name="valor" id="email" placeholder="E-mail">
-    <br>
-    <label for="equipamento"></label>
-    <input class="inputforms" type="text" name="valor" id="equipamento" placeholder="Marca e Modelo do Equipamento"><br><br>
-    <label>Descrição do Problema:</label>
-    <input class="inputforms" type="text" name="adicionais" value="" style="height: 100px;">
-    <label for="fotos">Selecione as fotos:</label>
-    <input class="inputforms" type="file" name="fotos[]" id="fotos" multiple accept=".png, .jpg, .jpeg" style="align-items: center;">
-    <br>
-    <br>
-    <button>Enviar Solicitação de Orçamento</button>
-</form>
-        </div>
-    
+      <div class="formulario-quadro">
+          <form action="consulta.php" method="POST" enctype="multipart/form-data">
+              <h2>Solicite um Orçamento</h2>
+              
+              <label for="nome">Nome Completo:</label>
+              <input class="inputforms" type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+              
+              <label for="telefone">Telefone:</label>
+              <input class="inputforms" type="tel" name="telefone" id="telefone" placeholder="Seu número de telefone" required>
+              
+              <label for="email">E-mail:</label>
+              <input class="inputforms" type="email" name="email" id="email" placeholder="Seu endereço de e-mail" required>
+              
+              <label for="equipamento">Marca e Modelo do Equipamento:</label>
+              <input class="inputforms" type="text" name="equipamento" id="equipamento" placeholder="Marca e modelo do equipamento" required>
+              
+              <label for="adicionais">Descrição do Problema:</label>
+              <textarea class="inputforms" name="adicionais" id="adicionais" placeholder="Descreva o problema aqui" rows="4" required></textarea>
+              
+              <label for="fotos">Selecione as fotos:</label>
+              <input class="inputforms" type="file" name="fotos[]" id="fotos" multiple accept=".png, .jpg, .jpeg" required>
+              
+              <br>
+              
+              <button type="submit">Enviar Solicitação de Orçamento</button>
+          </form>
+      </div>
+  </div>
 </body>
 </html>

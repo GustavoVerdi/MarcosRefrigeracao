@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Site de Busca</title>
+</head>
+<body>
+    <h1>Busca no Meu Site</h1>
+    <input type="text" id="busca" placeholder="Digite sua pesquisa aqui">
+    <button onclick="realizarBusca()">Buscar</button>
+
+    <h2>Resultados da Busca</h2>
+    <ul id="resultados"></ul>
+
+    <script>
+        function realizarBusca() {
+            // Pega o valor da pesquisa
+            var termoPesquisa = document.getElementById("busca").value.toLowerCase();
+
+            // Elementos a serem pesquisados (exemplo)
+            var elementosParaPesquisar = ["Lorem ipsum dolor sit amet", "consectetur adipiscing elit", "sed do eiusmod tempor", "incididunt ut labore et dolore", "aliqua."];
+
+            // Limpa a lista de resultados
+            var listaResultados = document.getElementById("resultados");
+            listaResultados.innerHTML = '';
+
+            // Realiza a pesquisa
+            elementosParaPesquisar.forEach(function (elemento) {
+                if (elemento.toLowerCase().includes(termoPesquisa)) {
+                    var itemLista = document.createElement("li");
+                    itemLista.textContent = elemento;
+                    listaResultados.appendChild(itemLista);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
