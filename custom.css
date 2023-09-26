@@ -183,14 +183,17 @@
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2px;
-  }
+    padding: 0px;
+    margin-left:-34px;
+    margin-right:-34px;
+    }
   
   .product {
     border: 2px solid #000000;
     border-radius: 15px;
-    padding: 20px;
-    margin: 34px;
+    padding: 3px;
+    margin: 10px;
+    width: 400px;
     text-align: center;
     background-color: #ccc;
   }
@@ -608,4 +611,25 @@ button:hover {
   outline: none;
   font-size: 15px;
  /*letter-spacing: 2px;*/
+}
+
+/*ELEMENTO LOADER*/
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loading {
+    display: block; /* ou outro valor adequado para exibição */
+    visibility: visible;
+    /* Outras propriedades de estilo, como largura, altura, cor de fundo, etc. */
 }
