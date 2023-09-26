@@ -20,14 +20,35 @@
                 }
             });
         });
+        function mostrarSubtelaComLoading() {
+            // Exibe o efeito de loading
+            var loading = document.getElementById("loading");
+            loading.style.display = "block";
 
+            // Espera por 3 segundos antes de mostrar a subtela
+            setTimeout(function () {
+                loading.style.display = "none"; // Oculta o loading
+                mostrarSubtela(); // Mostra a subtela
+            }, 3000); // 3000 milissegundos (3 segundos)
+        }
+
+        // Função para mostrar a subtela de checkout
+        function mostrarSubtela() {
+            var subtela = document.getElementById("minhaSubtela");
+            subtela.style.display = "block";
+        }
+        // Função para fechar a subtela de checkout
+        function fecharSubtela() {
+            var subtela = document.getElementById("minhaSubtela");
+            subtela.style.display = "none";
+        }
     </script>
 </head>
 
 <body>
     <nav>
         <ul class="menu">
-            <li class="logo"><img class="logopag " src="./logo/logo.png" alt="Logo da Sua Empresa"><a href="#"></a></li>
+            <li class="logo"><img class="logopag " src="./logo/logo.png" alt="Logo da Sua Empresa"><a href="index2.html"></a></li>
             <li class="item"><a href="index2.html">Home</a></li>
             <li class="item"><a href="catalogo2.html">Catalago</a></li>
             <li class="item"><a href="orcamento2.html">Orçamento</a></li>
@@ -46,14 +67,25 @@
         <div class="campo campo-direita">
             <!-- Conteúdo do campo direita -->
             <form>
-                <P>Informações Para contato</P>
-                <p>Nome:</p>
-                <p>Estado e Cidade:</p>
-                <p>Telefone:</p>
+                <H1 style="font-size: 55px;">Frigorbar 120L 12/24v Bivolt</H1>
+                <p style="font-size: 33px;"></p>
+                <p style="font-size: 33px;">Marca:Junges</p>
+                <label style="font-size: 33px;">Dispinível na Cor:</label>
+                <select name="cor" id="cor">
+                    <option>Branco</option>
+                </select>
+                <br>
+                <!--Forma de PAGAMENTO PIX-->
+                <label style="font-size: 33px;">Forma de Pagamento:</label>
+                <select name="pay" id="pay">
+                    <option>Pix</option>
+                </select>
+                  <!-- Campo para o valor do frete -->
+            <p style="font-size: 45px;">O valor do frete para sua região será:</p>
+                <H1 class="h2det">R$ 654.321</H1>
                 <!-- Botão "Finalizar Compra" -->
-                <button type="button" onclick="mostrarSubtela()" class="botaocompra"
-                    style="font-size: 22px; display: inline-block; background-color: green;">Finalizar Compra</button>
-
+                <button type="button" onclick="mostrarSubtelaComLoading()" class="botaocompra"
+                style="font-size: 22px; display: inline-block; background-color: green;">Finalizar Compra</button>
                 <!-- Div da subtela de checkout -->
                 <div class="subtela" id="minhaSubtela">
                     <div class="subtela-conteudo">
@@ -69,8 +101,12 @@
                         <button type="button" onclick="confirmarPagamento()">Confirmar Pagamento</button>
                         <button type="button" onclick="fecharSubtela()">Fechar</button>
                     </div>
+                    <div class="loading" id="loading" style="display: none;">
+                        <div class="loader"></div> <!-- Adicione um elemento loader aqui -->
+                    </div>
                 </div>
         </div>
+
     </div>
 </body>
 
