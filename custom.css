@@ -656,6 +656,7 @@ button:hover {
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .botao-compra:hover {
