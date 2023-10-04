@@ -614,24 +614,24 @@ button:hover {
   font-size: 15px;
  /*letter-spacing: 2px;*/
 }
-
-/*ELEMENTO LOADER*/
-.loader {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-  margin: 0 auto; /* Centralizar horizontalmente */
+#containerpagamento{
+  width:min(100%,350px);
+  display: inline-block;
+  color: #ffffff;
+  flex-direction: column;
+  border-radius: 5px solid #1d9d34;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  object-fit: cover;
+  overflow:visible; 
+  background-color: #494c4f;
 }
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+#qr-code{
+  width: 250px;
+  height: 250px;
 }
-.loading {
-    display: block; /* ou outro valor adequado para exibição */
-    visibility: visible;
-    /* Outras propriedades de estilo, como largura, altura, cor de fundo, etc. */
+.copcola{
+  width: auto;
+  height: 22px;
 }
