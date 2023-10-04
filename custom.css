@@ -637,6 +637,7 @@ button:hover {
 }
 
 .container1 {
+  text-align: center;
     justify-content: center;
     align-items: center;
     margin: 0;
