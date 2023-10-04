@@ -5,12 +5,13 @@
   * {
       font-size: 18px;
       font-family: 'Arimo', sans-serif;
+      
   }
   body {
       align-items: center;
       margin: 0px;
       border: 10px;
-      background-color: #ffffff;
+      background-color: white;
     } 
   /* Basic styling */
   * {
