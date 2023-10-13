@@ -630,6 +630,7 @@ button:hover {
 #qr-code{
   width: 250px;
   height: 250px;
+  display:inline;
 }
 .copcola{
   width: auto;

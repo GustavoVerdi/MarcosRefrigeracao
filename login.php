@@ -1,7 +1,0 @@
-<?php
-$login
-$senha 
-
-
-
-?>
