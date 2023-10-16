@@ -40,6 +40,17 @@
     // Iniciar o carrossel
     setInterval(changeImage, interval);
 
+    function copiarTexto() {
+  var campoTexto = document.getElementById("meuCampo");
+  campoTexto.select();
+  
+  try {
+      navigator.clipboard.writeText(campoTexto.value);
+      alert("Texto copiado: " + campoTexto.value);
+  } catch (err) {
+      console.error("Erro ao copiar o texto: ", err);
+  }
+}
   </script>
 </head>
 
@@ -63,7 +74,7 @@
         <img src="./imagem/qrcode.jpg" id="qr-code" alt="QR Code Pix" onclick="openModal('qrcode.jpg')" style="  display:flexblock;"><br>
         <p>PIX Copia e Cola</p>
         <input style="height: 22px;color:black;" type="text" value="Chavepixdavenda" readonly="readonly" id="meuCampo">
-        <button type="button" onclick="confirmarPagamento()" style="background-color: blue;">Copiar</button>
+        <button type="button" onclick="copiarTexto()" style="background-color: blue;">Copiar</button>
         <p>Após efetuar oa pagamento, clique no botão abaixo para confirmar:</p>
         <button type="button" onclick="confirmarPagamento()" style="background-color: blue;">Confirmar Pagamento</button>
 </body>
