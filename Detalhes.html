@@ -21,6 +21,20 @@
         }
     });
 });
+         function compraragora() {
+            var campoTexto = document.getElementById("meuCampo");
+            campoTexto.select();
+
+            try {
+                navigator.clipboard.writeText(campoTexto.value);
+                alert("Você ira ser direcionado para área de pagamento!");
+                
+                // Redirecionar para index.php após a cópia do texto
+                window.location.href = "login.php";
+            } catch (err) {
+                console.error("Você não possui uma conta ", err);
+            }
+        }
     </script>
 </head>
 <body>
@@ -58,12 +72,12 @@
                         <option>Pix</option>
                     </select>
                       <!-- Campo para o valor do frete -->
-                <p style="font-size: 30px;">O valor do frete para sua região será:</p>
+                <p style="font-size: 30px;">O valor do frete para sua região será: R$119.99</p>
                     <hr border="3">
                     <br>
-                    <H1 class="h2det">R$ 654.321</H1>
+                    <H1 class="h2det">R$ 654,32</H1>
                     <div class="container1">
-                        <a class="botao-compra" href="pagamento.html">Comprar Agora</a>
+                        <button  class="botao-compra" type="button" onclick="compraragora()">Copiar</button>
                     </div>
                 </form>
             </div>
