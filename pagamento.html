@@ -51,6 +51,20 @@
       console.error("Erro ao copiar o texto: ", err);
   }
 }
+          function confirmapagamento() {
+            var campoTexto = document.getElementById("meuCampo");
+            campoTexto.select();
+
+            try {
+                navigator.clipboard.writeText(campoTexto.value);
+                alert("Pagamento Confirmado, Aguarde orientações via E-mail");
+                
+                // Redirecionar para index.php após a cópia do texto
+                window.location.href = "index.php";
+            } catch (err) {
+                console.error("Erro ao realizar o pagamento.", err);
+            }
+        }
   </script>
 </head>
 
@@ -76,6 +90,6 @@
         <input style="height: 22px;color:black;" type="text" value="Chavepixdavenda" readonly="readonly" id="meuCampo">
         <button type="button" onclick="copiarTexto()" style="background-color: blue;">Copiar</button>
         <p>Após efetuar oa pagamento, clique no botão abaixo para confirmar:</p>
-        <button type="button" onclick="confirmarPagamento()" style="background-color: blue;">Confirmar Pagamento</button>
+        <button type="button" onclick="confirmapagamento()" style="background-color: blue;">Confirmar Pagamento</button>
 </body>
 </html>
