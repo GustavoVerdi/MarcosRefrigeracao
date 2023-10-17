@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Marcos Refrigeração</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+        function mostrarSubtelaComLoading() {
+            // Exibe o efeito de loading
+            var loading = document.getElementById("loading");
+            loading.style.display = "block";
+
+            // Espera por 3 segundos antes de mostrar a subtela
+            setTimeout(function () {
+                loading.style.display = "none"; // Oculta o loading
+                mostrarSubtela(); // Mostra a subtela
+            }, 3000); // 3000 milissegundos (3 segundos)
+        }
+
+        // Função para mostrar a subtela de checkout
+        function mostrarSubtela() {
+            var subtela = document.getElementById("minhaSubtela");
+            subtela.style.display = "block";
+        }
+        // Função para fechar a subtela de checkout
+        function fecharSubtela() {
+            var subtela = document.getElementById("minhaSubtela");
+            subtela.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img class="logopag " src="./logo/logo.png" alt="Logo da Sua Empresa"><a href="#"></a></li>
+            <li class="item"><a href="index2.php">Home</a></li>
+            <li class="item"><a href="catalogo2.php">Catalago</a></li>
+            <li class="item"><a href="orcamento2.php">Orçamento</a></li>
+            <li class="item"><a href="minhaconta.php">Minha Conta</a></li>
+            <li class="item button secondary"><a href="index.html">Sair</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="campo campo-esquerda">
+            <img class="carfoto"  src="./fotoproduto/produto6.jpg">
+            <h2> Descrição</h2>
+                <h6>Com medidas externas de 1,06 m de largura, 75 cm de profundidade e 86 cm de altura, o freezer oferece um amplo espaço interno para armazenar alimentos e produtos. Fabricado em aço e com pintura eletrostática branca, o freezer é robusto e possui uma aparência moderna.</h6>
+        </div>
+        <div class="campo">
+            <!-- Conteúdo do campo direita -->
+            <form>
+                <H1 style="font-size: 50px;">Freezer 300 Litros Tampa Cega 12/24v</H1>
+                <p style="font-size: 30px;"></p>
+                <p style="font-size: 30px;">Marca: Consul</p>
+                <label style="font-size: 30px;">Disponível na Cor:</label>
+                <select name="cor" id="cor">
+                    <option>Branca</option>
+                    <option>Preta</option>
+                </select>
+                <br>
+                <!--Forma de PAGAMENTO PIX-->
+                <label style="font-size: 30px;">Forma de Pagamento:</label>
+                <select name="pay" id="pay">
+                    <option>Pix</option>
+                </select>
+                  <!-- Campo para o valor do frete -->
+            <p style="font-size: 30px;">O valor do frete para sua região será: R$119,99</p>
+                <hr border="3">
+                <br>
+                <H1 class="h2det">R$ 3.505,50</H1>
+                <div class="container1">
+                    <a class="botao-compra" href="pagamento.html">Comprar Agora</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
