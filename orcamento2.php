@@ -43,58 +43,44 @@
   </script>
 </head>
 
-<body>
+<body style="background-color: #f2f2f2;">
   <nav>
     <ul class="menu">
-      <li class="logo"><img class="logopag" src="./logo/logo.png" href="index.html" alt="Logo da Sua Empresa"><a
-          href="index.html"></a></li>
-      <li class="item"><a href="index.html">Home</a></li>
-      <li class="item"><a href="catalogo.html">Catalago</a></li>
-      <li class="item"><a href="orcamento.html">Orçamento</a></li>
-      <li class="item button secondary"><a href="login.html">Login</a></li>
+      <li class="logo"><img class="logopag " src="./logo/logo.png" alt="Logo da Sua Empresa"><a href="#"></a></li>
+      <li class="item"><a href="index2.php">Home</a></li>
+      <li class="item"><a href="catalogo2.php">Catalago</a></li>
+      <li class="item"><a href="orcamento2.php">Orçamento</a></li>
+      <li class="item"><a href="minhaconta.php">Minha Conta</a></li>
+      <li class="item button secondary"><a href="index.html">Sair</a></li>
       <li class="toggle"><span class="bars"></span></li>
     </ul>
   </nav>
   <div class="containeranuncio">
     <div class="formulario-quadro">
-      <form id="orcamentoForm" action="javascript:void(0);" method="POST" enctype="multipart/form-data">
-        <h2>Solicite um Orçamento
-
-        </h2>
-
-        <label for="nome">Nome Completo:</label>
-        <input class="inputforms" type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
-
-        <label for="telefone">Telefone:</label>
-        <input class="inputforms" type="tel" name="telefone" id="telefone" placeholder="Seu número de telefone" required>
-
-        <label for="email">E-mail:</label>
-        <input class="inputforms" type="email" name="email" id="email" placeholder="Seu endereço de e-mail" required>
-
+      <form id="orcamentoForm">
+        <h2>Solicite um Orçamento</h2>
         <label for="equipamento">Marca e Modelo do Equipamento:</label>
-        <input class="inputforms" type="text" name="equipamento" id="equipamento"
-          placeholder="Marca e modelo do equipamento" required>
-
+        <input class="inputforms" type="text" name="equipamento" id="equipamento" placeholder="Marca e modelo do equipamento" required>
         <label for="adicionais">Descrição do Problema:</label>
-        <textarea class="inputforms" name="adicionais" id="adicionais" placeholder="Descreva o problema aqui"
-          rows="4" required></textarea>
-
+        <textarea class="inputforms" name="adicionais" id="adicionais" placeholder="Descreva o problema aqui" rows="4" required></textarea>
         <label for="fotos">Selecione as fotos:</label>
         <input class="inputforms" type="file" name="fotos[]" id="fotos" multiple accept=".png, .jpg, .jpeg">
-
         <br>
-
-        <button type="submit">Enviar Solicitação de Orçamento</button>
+        <button type="submit" id="enviarButton">Enviar Solicitação de Orçamento</button>
       </form>
     </div>
   </div>
   <script>
-    document.getElementById("orcamentoForm").addEventListener("submit", function (e) {
-      e.preventDefault(); // Impede o envio padrão do formulário
+    document.getElementById("enviarButton").addEventListener("click", function (e) {
+      if (!document.getElementById("orcamentoForm").checkValidity()) {
+        // O formulário não é válido, não faz nada.
+        return;
+      }
+      e.preventDefault(); // Evita o envio padrão do formulário
       // Exibe a mensagem
       alert("Orçamento enviado com sucesso!");
-      // Redireciona de volta para orcamento.html
-      window.location.href = "orcamento.html";
+      // Redireciona para a página orcamento2.php
+      window.location.href = "orcamento2.php";
     });
   </script>
 </body>

@@ -21,20 +21,6 @@
         }
     });
 });
-         function compraragora() {
-            var campoTexto = document.getElementById("meuCampo");
-            campoTexto.select();
-
-            try {
-                navigator.clipboard.writeText(campoTexto.value);
-                alert("Você ira ser direcionado para área de pagamento!");
-                
-                // Redirecionar para index.php após a cópia do texto
-                window.location.href = "login.php";
-            } catch (err) {
-                console.error("Você não possui uma conta ", err);
-            }
-        }
     </script>
 </head>
 <body>
@@ -42,7 +28,7 @@
         <ul class="menu">
             <li class="logo"><img class="logopag " src="./logo/logo.png" href="index.html" alt="Logo da Sua Empresa"><a href="index.html"></a></li>
             <li class="item"><a href="index.html">Home</a></li>
-            <li class="item"><a href="catalago.html">Catalago</a></li>
+            <li class="item"><a href="catalogo.html">Catalago</a></li>
             <li class="item"><a href="orcamento.html">Orçamento</a></li>
             <li class="item button secondary"><a href="login.html">Login</a></li>
             <li class="toggle"><span class="bars"></span></li>
@@ -72,12 +58,12 @@
                         <option>Pix</option>
                     </select>
                       <!-- Campo para o valor do frete -->
-                <p style="font-size: 30px;">O valor do frete para sua região será: R$119.99</p>
+                <p style="font-size: 30px;">O valor do frete para sua região será:</p>
                     <hr border="3">
                     <br>
-                    <H1 class="h2det">R$ 654,32</H1>
+                    <H1 class="h2det">R$ 654.321</H1>
                     <div class="container1">
-                        <button  class="botao-compra" type="button" onclick="compraragora()">Efetuar compra</button>
+                        <a class="botao-compra" href="pagamento.html">Comprar Agora</a>
                     </div>
                 </form>
             </div>

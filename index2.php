@@ -1,3 +1,15 @@
+<?php
+// Verifique se o usuário está logado (deve ser feito em todas as páginas protegidas)
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    // Redirecione para a página de login se o usuário não estiver logado
+    header("Location: login.html");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -46,11 +58,12 @@
 <body>
   <nav>
     <ul class="menu">
-      <li class="logo"><img class="logopag " src="./logo/logo.png" href="index.html" alt="Logo da Sua Empresa"><a href="index.html"></a></li>
-      <li class="item"><a href="index.html">Home</a></li>
-      <li class="item"><a href="catalogo.html">Catalago</a></li>
-      <li class="item"><a href="orcamento.html">Orçamento</a></li>
-      <li class="item button secondary"><a href="login.html">Login</a></li>
+    <li class="logo"><img class="logopag " src="./logo/logo.png" alt="Logo da Sua Empresa"><a href="#"></a></li>
+      <li class="item"><a href="index2.php">Home</a></li>
+      <li class="item"><a href="catalogo2.php">Catalago</a></li>
+      <li class="item"><a href="orcamento2.php">Orçamento</a></li>
+      <li class="item"><a href="minhaconta.php">Minha Conta</a></li>
+      <li class="item button secondary"><a href="index.html">Sair</a></li>
       <li class="toggle"><span class="bars"></span></li>
     </ul>
   </nav>
@@ -61,7 +74,6 @@
   <br>
   <div class="line-container">
     <hr class="styled-line"> 
-    <br>
     <span class="line-label">Frigobares</span>
   </div>
   <Br>
@@ -88,7 +100,6 @@
   <br>
   <div class="line-container">
     <hr class="styled-line">
-    <br>
     <span class="line-label">Refrigeradores</span>
   </div>
   <br>
