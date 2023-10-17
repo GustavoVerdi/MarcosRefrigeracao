@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Marcos Refrigeração</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img class="logopag " src="./logo/logo.png" href="index.html" alt="Logo da Sua Empresa"><a
+                    href="index.html"></a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="catalogo.html">Catalago</a></li>
+            <li class="item"><a href="orcamento.html">Orçamento</a></li>
+            <li class="item button secondary"><a href="login.html">Login</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="campo campo-esquerda">
+            <img class="carfoto" src="./fotoproduto/produto5.jpg">
+            <h2> Descrição</h2>
+            <h6>Caixa Térmica Fabricada em Aço Galvanizado, Acabamento com Pintura a Pó Eletrostática, Isolamento
+                Térmico com Isopor, Ideal para Conservar Alimentos Quente ou Frio, Bebidas em Geral etc.</h6>
+        </div>
+        <div class="campo">
+            <!-- Conteúdo do campo direita -->
+            <form>
+                <H1 style="font-size: 50px;">Caixa Térmica 90 Litros</H1>
+                <p style="font-size: 30px;"></p>
+                <p style="font-size: 30px;">Marca: LA Caixas Térmicas</p>
+                <label style="font-size: 30px;">Disponível na Cor:</label>
+                <select name="cor" id="cor">
+                    <option>Branca</option>
+                    <option>Amarela</option>
+                </select>
+                <br>
+                <!--Forma de PAGAMENTO PIX-->
+                <label style="font-size: 30px;">Forma de Pagamento:</label>
+                <select name="pay" id="pay">
+                    <option>Pix</option>
+                </select>
+                <!-- Campo para o valor do frete -->
+                <p style="font-size: 30px;">O valor do frete para sua região será: R$119,99</p>
+                <hr border="3">
+                <br>
+                <H1 class="h2det">R$ 585,00</H1>
+                <div class="container1">
+                    <button id="comprarBtn">Comprar Agora</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Seleciona o botão "Comprar Agora" pelo ID e adiciona um evento de clique
+        document.getElementById('comprarBtn').addEventListener('click', function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            // Exibe um alerta quando o botão "Comprar Agora" é clicado
+            alert('Para realizar a compra do produto é necessário estar logado no site.');
+        });
+    </script>
+</body>
+
+</html>
