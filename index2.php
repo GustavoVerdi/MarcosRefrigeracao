@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id'])) {
     ];
 
     var currentIndex = 0;
-    var interval = 2000; // 2 segundos
+    var interval = 3000; // 3 segundos
 
     function changeImage() {
       var mainImage = document.getElementById("mainImage");
