@@ -37,6 +37,8 @@ if (!isset($_SESSION['user_id'])) {
  var images = [
       "./template/template1.jpg",
       "./template/template2.jpg",
+      "./template/template4.jpg",
+      "./template/template3.jpg",
       // Adicione mais URLs de imagens conforme necessário
     ];
 
