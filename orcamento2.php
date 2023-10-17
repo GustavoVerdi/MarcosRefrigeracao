@@ -48,7 +48,7 @@
     <ul class="menu">
       <li class="logo"><img class="logopag " src="./logo/logo.png" alt="Logo da Sua Empresa"><a href="#"></a></li>
       <li class="item"><a href="index2.php">Home</a></li>
-      <li class="item"><a href="catalogo2.php">Catalago</a></li>
+      <li class="item"><a href="catalogo2.php">Catálogo</a></li>
       <li class="item"><a href="orcamento2.php">Orçamento</a></li>
       <li class="item"><a href="minhaconta.php">Minha Conta</a></li>
       <li class="item button secondary"><a href="index.html">Sair</a></li>
