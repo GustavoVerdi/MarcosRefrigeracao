@@ -21,6 +21,13 @@
         }
     });
 });
+    // Seleciona o formulário pelo ID e adiciona um evento de envio
+    document.getElementById('redefinirSenhaForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+        // Exibe um alerta quando o botão "Redefinir Senha" é clicado
+        alert('Para realizar a compra do produto é necessário estar logado no site.');
+
+    });
     </script>
 </head>
 <body>
@@ -63,7 +70,7 @@
                     <br>
                     <H1 class="h2det">R$ 654.321</H1>
                     <div class="container1">
-                        <a class="botao-compra" href="pagamento.html">Comprar Agora</a>
+                        <a class="botao-compra" id="submitBtn" value="Redefinir Senha" id="esqueceuSenhaLink" >Comprar Agora</a>
                     </div>
                 </form>
             </div>
