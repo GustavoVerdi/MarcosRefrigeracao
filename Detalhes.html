@@ -21,13 +21,12 @@
         }
     });
 });
-    // Seleciona o formulário pelo ID e adiciona um evento de envio
-    document.getElementById('redefinirSenhaForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
-        // Exibe um alerta quando o botão "Redefinir Senha" é clicado
-        alert('Para realizar a compra do produto é necessário estar logado no site.');
-
-    });
+   // Seleciona o botão "Comprar Agora" pelo ID e adiciona um evento de clique
+        document.getElementById('submitBtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            // Exibe um alerta quando o botão "Comprar Agora" é clicado
+            alert('Para realizar a compra do produto é necessário estar logado no site.');
+        });
     </script>
 </head>
 <body>
@@ -51,7 +50,7 @@
             <div class="campo">
                 <!-- Conteúdo do campo direita -->
                 <form>
-                    <H1 style="font-size: 50px;">Frigorbar 120L 12/24v Bivolt</H1>
+                    <H1 style="font-size: 45px;">Frigorbar 120L 12/24v Bivolt</H1>
                     <p style="font-size: 30px;"></p>
                     <p style="font-size: 30px;">Marca: Junges</p>
                     <label style="font-size: 30px;">Dispinível na Cor:</label>
